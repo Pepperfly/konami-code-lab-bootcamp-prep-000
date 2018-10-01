@@ -15,10 +15,10 @@ function init() {
   
   let i = 0 // index pointer
 
-  document.body.addEventListener("keydown", (what) => {
-    const key = what.key
+  document.body.addEventListener("keydown", (keyPressed) => {
+    const keyCode = keyPressed.key
     
-    if (key === codes[i]) {
+    if (keyCode === codes[i]) {
       ++i;
     } else {
       i = 0;
